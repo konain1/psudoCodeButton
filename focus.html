@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 100vh;
+            background-color: aquamarine;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        form{
+            border: 1px solid ;
+            height: 20vh;
+            width: 40vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        button{
+            position:relative;
+        }
+        input:focus-visible{
+            outline:2px solid red;
+        }
+        button:active{
+            background-color: yellow;
+            
+
+        }
+        label{
+            font-size: 20px;
+            padding: 10px;
+        }
+        button::after{
+            content: '*';
+            color: red; 
+            left: 110%;
+            top: -50%;
+            position: absolute;
+            font-size: 30px;
+
+           
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="main">
+        <form action="#">
+            <label for="namreform">name</label>
+            <input type="text" id="nameform" placeholder="type here">
+            <button>click here</button>
+
+        </form>
+    </div>
+</body>
+</html>
