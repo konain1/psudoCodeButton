@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 100vh;
+            background-color: rgb(23, 23, 21);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container1 :is(h3,p){
+            color :rgb(242, 238, 230);
+        }
+        .container2:has(h3){
+            background-color: blueviolet;
+        }
+        .container2 :is(h3,p){
+            background-color: rgb(146, 146, 49);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="container1">
+            <h3>:is()</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, id!</p>
+
+
+        </div>
+        <div class="container2">
+            <h3>:has()</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, pariatur.</p>
+        </div>
+    </div>
+</body>
+</html>
